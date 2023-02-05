@@ -1,0 +1,360 @@
+@font-face {
+    src: url('../fonts/FuturaNewMedium-Reg.ttf');
+    font-family: 'Futura New';
+}
+
+@font-face {
+    src: url('../fonts/futurabookc.ttf');
+    font-family: 'Futura BookC';
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Futura New';
+    padding: 0;
+    margin: 0;
+}
+
+.ps_menu__header {
+    width: 1880px;
+    height: 150px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 14px rgba(31, 31, 34, 0.15);
+    border-radius: 20px;
+    border: 2px solid #FFFFFF;
+    margin-bottom: 100px;
+}
+
+.ps_menu__inner {
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ps_menu__logo,
+.ps_footer__logo {
+    display: flex;
+    margin-top: 10px;
+}
+
+.ps_logo-1__menu,
+.ps_logo-1__footer {
+    position: relative;
+    padding-left: 80px;
+}
+
+.ps_logo-1__menu:after,
+.ps_logo-1__footer:after {
+    content: 'the best youcan be';
+    font-family: 'Futura BookC';
+    margin: 0 auto;
+    color: #00A4E5;
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.ps_menu__inner_company-name {
+    padding-left: 18px;
+    padding-top: 26px;
+    margin-right: 240px;
+    color: #B2B8BF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.ps_logo-2 {
+    position: absolute;
+    left: 205px;
+    top: -20px;
+}
+
+.ps_menu__nav {
+    display: flex;
+    list-style: none;
+    margin-right: 40px;
+}
+
+.ps_menu__nav li {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #1F1F22;
+    margin-right: 30px;
+}
+
+.ps_menu__nav li:last-child {
+    margin-right: 0px;
+}
+
+.ps_menu__nav li:nth-child(4):after,
+.ps_menu__nav li:nth-child(5):after {
+    content: url('../img/Icon_down.png');
+    width: 14px;
+    height: 8px;
+    margin-left: 10px;
+}
+
+.ps_menu__nav li a {
+    text-decoration: none;
+    color: #1F1F22;
+}
+
+.ps_menu__icon {
+    margin-right: 40px;
+}
+
+.ps__menu_line {
+    content: '';
+    width: 1px;
+    height: 38px;
+    background-color: #B2B8BF;
+    display: block;
+    border-radius: 4px;
+    margin-right: 35px;
+}
+
+.ps_menu__icon-phone {
+    width: 25px;
+    height: 25px;
+    margin-right: 25px;
+}
+
+.ps_menu__icon-arrow {
+    width: 25px;
+    height: 22.5px;
+    margin-right: 35px;
+}
+
+.ps_page {
+    padding-left: 155px;
+    margin-bottom: 280px;
+}
+
+.ps_page__title-menu {
+    width: 752px;
+    height: 22px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #B2B8BF;
+    margin-bottom: 45px;
+}
+
+.ps_page__title-menu a {
+    text-decoration-line: underline;
+    color: #B2B8BF;
+}
+
+.ps_page__title {
+    font-weight: 450;
+    font-size: 90px;
+    line-height: 111px;
+    text-transform: uppercase;
+    color: #00B3F1;
+    margin-bottom: 75px;
+}
+
+.ps_page__subtitle {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 72px;
+    color: #1F1F22;
+    margin-bottom: 80px;
+}
+
+.ps_page__grid {
+    display: grid;
+    grid-template-columns: 330px 330px 350px;
+    grid-template-rows: 150px;
+    grid-gap: 1px;
+    grid-auto-rows: 140px;
+}
+
+.ps_page__item_row {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #7D838A;
+    padding-bottom: 12px;
+}
+
+::-webkit-input-placeholder {
+    padding-left: 25px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #B2B8BF;
+}
+
+:-moz-placeholder {
+    padding-left: 25px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #B2B8BF;
+}
+
+.ps_page__item input,
+.ps_page__item-clock {
+    width: 287px;
+    height: 64px;
+    background: #F2F4F7;
+    border-radius: 20px;
+    border: 0px;
+}
+
+.ps_page__item-clock {
+    font-size: 18px;
+    line-height: 22px;
+    color: #1F1F22;
+}
+
+.ps_page__button-yes,
+.ps_page__button-no {
+    width: 151px;
+    height: 64px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 14px rgba(31, 31, 34, 0.15);
+    border-radius: 20px;
+    color: #6AC46B;
+    border: 0px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.ps_page__button-no {
+    color: #D72E20;
+}
+
+.ps_page__button-yes {
+    margin-right: 20px;
+}
+
+.ps_page__button-yes:hover,
+.ps_page__button-no:hover,
+.ps_page__button-onsward:hover {
+    cursor: pointer;
+}
+
+.ps_page__button-onsward {
+    width: 325px;
+    height: 64px;
+    background: #00B3F1;
+    border-radius: 40px;
+    margin-top: 35px;
+    border: 0px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.ps_page__button-onsward:after {
+    content: url('../img/Vector\ 1.png');
+    width: 32px;
+    height: 14px;
+    margin-left: 15px;
+    margin-top: 30px;
+    color: #FFFFFF;
+}
+
+.ps_footer {
+    width: 1920px;
+    height: 480px;
+    background-color: #386474;
+}
+
+.ps_footer__line {
+    margin: 0 auto;
+    width: 1594px;
+    height: 0px;
+    border: 1px solid #FFFFFF;
+}
+
+.ps_footer__search {
+    display: flex;
+    align-items: center;
+    height: 307px;
+}
+
+.ps_footer__input {
+    width: 287px;
+    height: 64px;
+    background: #F2F4F7;
+    border-radius: 20px;
+    margin-left: 155px;
+    border: 0;
+}
+
+.ps_footer__button {
+    width: 162px;
+    height: 64px;
+    background: #00B3F1;
+    border-radius: 40px;
+    margin-left: -120px;
+    margin-right: 650px;
+    border: 0;
+    color: #FFFFFF;
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.ps_footer__blok {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ps_footer__blok-2 {
+    padding-left: 165px;
+}
+
+.ps_footer__h3 {
+    font-weight: 450;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.ps_footer__coment {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-bottom: 13px;
+}
+
+.ps_footer__about {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ps_footer__logo {
+    margin-right: 600px;
+    margin-top: 55px;
+}
+
+.ps_logo-1__footer:after {
+    color: #FFFFFF;
+}
+
+.ps_footer__copyright {
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    padding-top: 85px;
+    margin-right: 90px;
+}
+
+.ps_footer__link {
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
