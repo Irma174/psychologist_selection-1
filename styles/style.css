@@ -438,9 +438,7 @@ input[type=search] {
     width: 940px;
 }
 
-.ps_page2__button-male,
-.ps_page2__button-female,
-.ps_page2__button-noMatter {
+.ps_page2__button-choice {
     width: 287px;
     height: 64px;
     background: #FFFFFF;
@@ -454,7 +452,8 @@ input[type=search] {
     color: #1F1F22;
 }
 
-.ps_page2__button-noMatter {
+.ps_page2__button-choice:active,
+.ps_page2__button-choice:focus {
     border: 4px solid #00B3F1;
 }
 
@@ -481,23 +480,23 @@ input[type=search] {
     padding-left: 5px;
 }
 
-.ps_frame87,
-.ps_frame90,
-.ps_frame88,
-.ps_frame89 {
+.ps_page2__form-condition,
+.ps_page2__form-connection,
+.ps_page2__form-job,
+.ps_page2__live-event {
     width: 1428px;
     height: 280px;
     padding-top: 30px;
     margin-bottom: 35px;
 }
 
-.ps_frame90,
-.ps_frame88 {
+.ps_page2__form-connection,
+.ps_page2__form-job {
     height: 145px;
     margin-bottom: 15px;
 }
 
-.ps_frame89 {
+.ps_page2__live-event {
     height: 185px;
     padding-top: 30px;
 }
@@ -755,6 +754,7 @@ label {
 .ps_formPsy__grid-item6 {
     grid-column: 4 / 5;
     grid-row: 2 / 4;
+    grid-row: 2 / 4;
 }
 
 .ps_formPsy__grid-item7 {
@@ -820,11 +820,122 @@ input[type="file"] {}
 
  */
 
+/*Карточка психолога_стр5*/
+.ps_items__name-page4 {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 72px;
+    color: #1F1F22;
+    padding-top: 35px;
+    margin-bottom: 40px;
+}
 
+.ps_page4__about {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1F1F22;
+    width: 776px;
+    margin-bottom: 40px;
+}
+
+.ps_items__items-about-practice {
+    display: grid;
+    grid-template-columns: 166px 755px;
+}
+
+.ps_page4__card {
+    display: grid;
+    grid-template-columns: 650px 755px;
+    grid-template-rows: 550px 650px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1F1F22;
+}
+
+.ps_pages4__avatar {
+    padding-top: 40px;
+    grid-row: 1 / 3;
+}
+
+.ps_pages4__avatar-foto {
+    margin-bottom: 40px;
+}
+
+.ps_items__education-name {
+    list-style: none;
+}
+
+.ps_pages__work-direction {
+    grid-column: 2 / 3;
+    width: 777px;
+    height: 440px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 14px rgba(31, 31, 34, 0.15);
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ps_page4__card-label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1F1F22;
+    margin-bottom: 5px;
+}
+
+.ps_page__button-registration {
+    width: 325px;
+    height: 64px;
+    background: #00B3F1;
+    border-radius: 40px;
+    margin-top: 40px;
+    border: 0px;
+    text-align: center;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 10px;
+    width: 360px;
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 25px;
+    margin-left: 45px;
+}
+
+.ps_page4__time-record {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    padding-left: 100px;
+    color: #1F1F22;
+}
+
+.ps_page__button-psy {
+    width: 327px;
+    height: 64px;
+    left: 163px;
+    top: 1432px;
+
+    background: #E4E8EB;
+    border-radius: 40px;
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 25px;
+    border: 0;
+    text-align: center;
+
+    color: #7D838A;
+}
 
 @media screen and (max-width: 1024px) {
 
-    .ps_menu__header,
+    f .ps_menu__header,
     .ps_menu__logo,
     .ps_footer__logo {
         margin: 15px auto;
@@ -924,28 +1035,25 @@ input[type="file"] {}
         flex-direction: column;
     }
 
-    .ps_page2__button-male,
-    .ps_page2__button-female,
-    .ps_page2__button-noMatter {
+    .ps_page2__button-choice {
         margin-bottom: 20px;
     }
 
-    .ps_frame87,
-    .ps_frame90,
-    .ps_frame88,
-    .ps_frame89 {
+    .ps_page2__form-condition,
+    .ps_page2__form-connection,
+    .ps_page2__form-job,
+    .ps_page2__live-event {
         max-width: 800px;
         height: 100%;
     }
 
-    .title__page1{
-       flex-direction: column;
+    .title__page1 {
+        flex-direction: column;
     }
 
-    .title__page1 li{
+    .title__page1 li {
         margin-bottom: 20px;
     }
-
 
 }
 
