@@ -453,6 +453,7 @@ input[type=search] {
 }
 
 .ps_page2__button-choice:active,
+.ps_page2__button-choice:focus,
 .ps_page2__button-choice:focus {
     border: 4px solid #00B3F1;
 }
@@ -669,10 +670,10 @@ label {
 
 .ps_page__formPsy-grid {
     display: grid;
-    grid-template-columns: 160px 160px 160px 50%;
-    grid-template-rows: 1fr 1fr 1f;
-    justify-content: flex-start;
-    margin-bottom: 70px;
+    grid-template-columns: 165px 165px 165px 900px;
+    grid-template-rows: 140px 140px 140px;
+    gap:10px;
+    margin-bottom: 50px;
 }
 
 .ps_page__input-formPsy-name,
@@ -728,6 +729,8 @@ label {
 }
 
 .ps_formPsy__grid-item3 {
+
+    justify-content: space-around;
     display: flex;
     position: relative;
     z-index: 10;
@@ -749,12 +752,14 @@ label {
 
 .ps_formPsy__grid-item5 {
     grid-column: 2 / 4;
+    justify-self:end;
 }
 
 .ps_formPsy__grid-item6 {
     grid-column: 4 / 5;
     grid-row: 2 / 4;
-    grid-row: 2 / 4;
+    justify-self:center;
+
 }
 
 .ps_formPsy__grid-item7 {
@@ -765,60 +770,6 @@ label {
 .ps_formPsy__grid-item8 {
     grid-column: 3 / 4;
 }
-
-
-
-/* .ps_page__formPsy-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 50%;
-    grid-template-rows: 1fr 1fr 1f;
-    gap: 10px;
-}
-
-.ps__grid-item1 {
-    
-}
-
-.ps__grid-item2 {
-    
-}
-
-.ps__grid-item3 {
-    
-}
-
-.ps__grid-item4 {
-    
-}
-
-.ps__grid-item5 {
-    
-}
-
-.ps__grid-item6 {
-
-}
-
-.ps__grid-item7 {
-    
-}
-
-.ps__grid-item8 {
-    
-}
-
-input[type="file"] {}
-
-
-.ps__grid-item3 input {
-    width: 287px;
-    height: 64px;
-    background: #F2F4F7;
-    /* border-radius: 20px; 
-    border: 0px;
-}
-
- */
 
 /*Карточка психолога_стр5*/
 .ps_items__name-page4 {
@@ -1053,6 +1004,12 @@ input[type="file"] {}
 
     .title__page1 li {
         margin-bottom: 20px;
+    }
+
+    .ps_page__formPsy-grid {
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
     }
 
 }
