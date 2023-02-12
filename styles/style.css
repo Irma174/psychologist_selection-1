@@ -15,6 +15,17 @@
     margin: 0;
 }
 
+.ps__carousel__photo {
+    width: 400px;
+    margin: 50px auto;
+}
+
+
+.carousel-item {
+    width: 384px;
+    height: 604px;
+}
+
 .ps_menu__header {
     max-width: 1880px;
     min-height: 150px;
@@ -168,6 +179,7 @@
     margin-bottom: 75px;
 }
 
+
 .ps_page__subtitle {
     font-weight: 400;
     font-size: 60px;
@@ -291,6 +303,7 @@
     line-height: 25px;
 }
 
+.ps_page__button-psy-return:after,
 .ps_page__button-onsward:after {
     content: url('../img/Vector.png');
     width: 32px;
@@ -304,6 +317,7 @@
     content: "";
 }
 
+.ps_page__button-psy:before,
 .rs_page__button-return:before {
     content: url('../img/Vector_return.png');
     width: 32px;
@@ -672,7 +686,7 @@ label {
     display: grid;
     grid-template-columns: 165px 165px 165px 900px;
     grid-template-rows: 140px 140px 140px;
-    gap:10px;
+    gap: 10px;
     margin-bottom: 50px;
 }
 
@@ -692,7 +706,6 @@ label {
     font-size: 20px;
     line-height: 22px;
     color: #1F1F22;
-    /* background-color:#D72E20; */
 }
 
 .ps_page__input-formPsy-gender,
@@ -752,13 +765,13 @@ label {
 
 .ps_formPsy__grid-item5 {
     grid-column: 2 / 4;
-    justify-self:end;
+    justify-self: end;
 }
 
 .ps_formPsy__grid-item6 {
     grid-column: 4 / 5;
     grid-row: 2 / 4;
-    justify-self:center;
+    justify-self: center;
 
 }
 
@@ -769,6 +782,67 @@ label {
 
 .ps_formPsy__grid-item8 {
     grid-column: 3 / 4;
+}
+
+/*Все психологи_стр4*/
+.ps_page4__card {
+    display: grid;
+    grid-template-columns: 800px 800px;
+    grid-template-rows: 600px 550px;
+    gap: 30px;
+}
+
+.ps_pages4__item-1,
+.ps_pages4__item-2 {
+    width: 777px;
+    height: 595px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 14px rgba(31, 31, 34, 0.15);
+    border-radius: 20px;
+    padding-left: 30px;
+    margin-right: 25px;
+}
+
+.ps_pages4__grid4 {
+    margin-top: -90px;
+}
+
+.ps_pages4__item-2 {
+    height: 505px;
+}
+
+.ps_pages4__item-1-body {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: 170px 200px 200px;
+    justify-items: center;
+    align-items: center;
+}
+
+.ps_pages4__item-2-body {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: 170px 166px 166px;
+    justify-items: center;
+    align-items: center;
+}
+
+.ps_page4__items-about {
+    grid-column: 1 / 3;
+    display: flex;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.ps_page4__items-img {
+    padding-top: 30px;
+}
+
+.ps_page5__card-label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1F1F22;
 }
 
 /*Карточка психолога_стр5*/
@@ -795,7 +869,7 @@ label {
     grid-template-columns: 166px 755px;
 }
 
-.ps_page4__card {
+.ps_page5__card {
     display: grid;
     grid-template-columns: 650px 755px;
     grid-template-rows: 550px 650px;
@@ -817,6 +891,13 @@ label {
     list-style: none;
 }
 
+.ps_page5__items-about {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+}
+
 .ps_pages__work-direction {
     grid-column: 2 / 3;
     width: 777px;
@@ -829,7 +910,8 @@ label {
     grid-template-columns: repeat(2, 350px);
     grid-template-rows: auto;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    padding-top: 30px;
 
 }
 
@@ -867,7 +949,8 @@ label {
     color: #1F1F22;
 }
 
-.ps_page__button-psy {
+.ps_page__button-psy,
+.ps_page__button-psy-return {
     width: 327px;
     height: 64px;
     left: 163px;
@@ -880,8 +963,16 @@ label {
     line-height: 25px;
     border: 0;
     text-align: center;
-
     color: #7D838A;
+}
+
+.ps_page4__button{
+    display: flex;
+    justify-content: space-around;
+}
+.ps_page__button-psy,
+.ps_page__button-psy-return{
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1011,6 +1102,24 @@ label {
         flex-wrap: wrap;
         width: 300px;
     }
+
+    .ps_page4__card{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ps_pages4__grid4 {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .ps_page5__questionary,
+    .ps_pages4__item-1-body,
+    .ps_pages4__item-2-body{
+        display: flex;
+        flex-direction: column;
+
+    }
+    
 
 }
 
