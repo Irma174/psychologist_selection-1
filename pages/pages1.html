@@ -48,34 +48,32 @@
                     <form class="ps_page__grid" action="" id="formAcquaintance">
                         <div class="ps_page__item ">
                             <label for="name" class="ps_page__item_row">Как вас зовут?</label>
-                            <input class="ps_page__input" type="text" id="name" name="name" placeholder="Иван Иванов">
+                            <input class="ps_page__input" type="text" id="name" name="ps_name" placeholder="Иван Иванов" required>
                         </div>
                         <div class="ps_page__item">
                             <label for="age" class="ps_page__item_row">Сколько вам лет?</label>
-                            <input class="ps_page__input" type="number" id="age" name="age" placeholder="25" max="80">
+                            <input class="ps_page__input" type="number" id="age" name="ps_age" placeholder="25" max="80" required>
                         </div>
-                        <fieldset form="formAcquaintance" class="ps_page__item ps_page__fieldset">
+                        <fieldset form="formAcquaintance" class="ps_page__item ps_page__fieldset" >
                             <legend class="ps_page__item_row">Был ли у вас опыт психотерапии?</legend>
                             <div class="ps_page__button">
                                 <div class="ps_page__btn">
-                                    <input class="ps_page__input ps_page__input-Yes" type="radio" id="Yes"
-                                        name="ps_therapy">
+                                    <input class="ps_page__input ps_page__input-Yes" type="radio" id="Yes" name="ps_therapy">
                                     <label for="Yes" class="ps_page__label-Yes">Да</label>
                                 </div>
                                 <div class="ps_page__btn">
-                                    <input class="ps_page__input ps_page__input-No" type="radio" id="No"
-                                        name="ps_therapy">
+                                    <input class="ps_page__input ps_page__input-No" type="radio" id="No" name="ps_therapy">
                                     <label for="No" class="ps_page__label-No">Нет</label>
                                 </div>
                             </div>
                         </fieldset>
                         <div class="ps_page__item">
-                            <label class="ps_page__item_row">E-mail</label>
-                            <input class="ps_page__input" type="email" name="ps_email" placeholder="email@email.com">
+                            <label for="email" class="ps_page__item_row">E-mail</label>
+                            <input class="ps_page__input" type="email" id="email" name="ps_email" placeholder="email@email.com" required>
                         </div>
                         <div class="ps_page__item">
-                            <label class="ps_page__item_row">Часовой пояс</label>
-                            <select name="ps_timezone" class="ps_page__input ps_page__item-clock">
+                            <label for="clock" class="ps_page__item_row">Часовой пояс</label>
+                            <select id="clock" name="ps_timezone" class="ps_page__input ps_page__item-clock" >
                                 <option value="Москва" selected="">GMT+03:00 Москва</option>
                                 <option>---</option>
                                 <option value="Калининград">GMT+02:00 Калининград</option>
@@ -167,7 +165,7 @@
                             </select>
                         </div>
                         <div class="ps_page__item ps_page__item-onsward">
-                            <button class="ps_page__button-onsward"><a href="./pages2.html">Далее</a></button>
+                            <button form="formAcquaintance" class="ps_page__button-onsward" type="submit">Далее</button>
                         </div>
                     </form>
                 </div>

@@ -49,18 +49,16 @@
                         <legend class="ps_page__item_row">С кем вы вам было комфортнее работать?</legend>
                         <div class="ps_page__button ps_page__button_comfort-work">
                             <div class="ps_page__btn">
-                                <input class="ps_page__input ps_page__input-anyway" type="radio" id="anyway"
-                                    name="choice">
-                                <label for="anyway" class="ps_page__label-anyway">Не имеет значения</label>
+                                <input class="ps_page__input ps_page__input-choice" type="radio" id="anyway" name="ps_choice">
+                                <label for="anyway" class="ps_page__label-choice">Не имеет значения</label>
                             </div>
                             <div class="ps_page__btn">
-                                <input class="ps_page__input ps_page__input-man" type="radio" id="man" name="choice">
-                                <label for="man" class="ps_page__label-man">Мужчина</label>
+                                <input class="ps_page__input ps_page__input-choice" type="radio" id="man" name="ps_choice">
+                                <label for="man" class="ps_page__label-choice">Мужчина</label>
                             </div>
                             <div class="ps_page__btn">
-                                <input class="ps_page__input ps_page__input-woman" type="radio" id="woman"
-                                    name="choice">
-                                <label for="woman" class="ps_page__label-woman">Женщина</label>
+                                <input class="ps_page__input ps_page__input-choice" type="radio" id="woman" name="ps_choice">
+                                <label for="woman" class="ps_page__label-choice">Женщина</label>
                             </div>
                         </div>
                     </fieldset>
@@ -275,13 +273,35 @@
                             </div>
                         </div>
                     </div>
+                    <!-- <h3 class="ps_page2_h3">Предпочтения по времени сессии</h3>
+                    <div class="ps_page2__button">
+                        <input class="ps_page2__button-choice" type="button" name="anyway" value="Любое" />
+                        <input class="ps_page2__button-choice" type="button" name="man" value="Ближайшее"/>
+                        <input class="ps_page2__button-choice" type="button" name="woman" value="Конкретное"/>
+                    </div> -->
+                    <fieldset form="formAcquaintance" class="ps_page__item ps_page__fieldset">
+                        <legend class="ps_page__item_row">Предпочтения по времени сессии</legend>
+                        <div class="ps_page__button ps_page__button_comfort-work">
+                            <div class="ps_page__btn">
+                                <input class="ps_page__input ps_page__input-choice" type="radio" id="anytime" name="ps_choice-time">
+                                <label for="anytime" class="ps_page__label-choice">Любое</label>
+                            </div>
+                            <div class="ps_page__btn">
+                                <input class="ps_page__input ps_page__input-choice" type="radio" id="nearest" name="ps_choice-time">
+                                <label for="nearest" class="ps_page__label-choice">Ближайшее</label>
+                            </div>
+                            <div class="ps_page__btn">
+                                <input class="ps_page__input ps_page__input-choice" type="radio" id="exact" name="ps_choice-time">
+                                <label for="exact" class="ps_page__label-choice">Конкретное</label>
+                            </div>
+                        </div>
+                    </fieldset>
                     <div class="ps_page2__button">
                         <div class="ps_page__item ps_page__item-onsward">
-                            <button class="ps_page__button-onsward rs_page__button-return" onclick=""><a
-                                    href="./pages1.html">Назад</a></button>
+                            <button class="ps_page__button-onsward rs_page__button-return" type="button">Назад</button>
                         </div>
                         <div class="ps_page__item ps_page__item-onsward">
-                            <button class="ps_page__button-onsward" onclick=""><a href="./pages3.html">Далее</a></button>
+                            <button class="ps_page__button-onsward" type="submit">Далее</button>
                         </div>
                     </div>
                 </div>
