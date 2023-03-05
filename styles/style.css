@@ -504,10 +504,12 @@ input[type=search] {
 }
 
 .ps_page__input-choice{
+
     display: none;
 }
 
 .ps_page__label-choice{
+
     display: flex;
     align-items: center;
     justify-content: center;
